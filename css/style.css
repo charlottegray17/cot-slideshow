@@ -1,28 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  background: black;
+  background: grey;
 }
 
 .slider {
   margin: 30px auto;
-  width: 1200px;
-  height: 800px;
-  background: url(../img/001.jpg);
-  animation: slide 30s infinite;
+  width: 1000px;
+  height: 600px;
+  /*background: url(../img/Background.png) center;*/
+  background: url(../img/Background.png);
+  animation: slide 20s infinite;
 }
 
 @keyframes slide {
   25% {
-    background: url(../img/002.jpg);
+    background: url(../img/Background1.png);
   }
   50% {
-    background: url(../img/003.jpg);
+    background: url(../img/Background2.png);
   }
   75% {
-    background: url(../img/004.jpg);
+    background: url(../img/Background3.png);
   }
   100% {
-    background: url(../img/005.jpg);
+    background: url(../img/Background4.png);
   }
 }

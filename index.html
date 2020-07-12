@@ -3,11 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>India Slideshow</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css//style.css">
   </head>
   <body>
-    <div class="slider">
+    <script>
+      var i = 0; // Starting Point
+      var images = [];
+      var time = 1000;
 
-    </div>
+      //Image List
+      images[0] = 'Background3.png';
+      images[1] = 'Background1.png';
+      images[2] = 'Background2.png';
+      images[3] = 'Background4.png';
+      images[4] = 'Background5.png';
+      images[5] = 'Background6.png';
+
+
+      //Change image
+      function changeImg(){
+        document.slide.src = images[i];
+
+      if(i < images.length - 1){
+        i++;
+      } else {
+        i = 0;
+      }
+
+      setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+
+
+      </script>
+
+      <img name="slide" width="800" height="">
   </body>
 </html>
